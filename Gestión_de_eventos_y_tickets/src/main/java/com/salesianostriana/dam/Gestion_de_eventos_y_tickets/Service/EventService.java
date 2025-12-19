@@ -7,11 +7,13 @@ import com.salesianostriana.dam.Gestion_de_eventos_y_tickets.Repository.EventRep
 import com.salesianostriana.dam.Gestion_de_eventos_y_tickets.Repository.OrganizerRepository;
 import com.salesianostriana.dam.Gestion_de_eventos_y_tickets.Repository.VenueRepository;
 import jakarta.persistence.EntityNotFoundException;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@RequiredArgsConstructor
 public class EventService {
 
     private EventRepository eventRepository;
